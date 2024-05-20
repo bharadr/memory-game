@@ -7,7 +7,7 @@ const names = ["Emily", "Michael", "Sarah", "James", "Jessica", "David", "Ashley
 
 function MemoryCard({name, handleCard}) {
     return (
-        <div className="card" onClick={handleCard}>{name}</div>
+        <div className="card" onClick={() => handleCard(name)}>{name}</div>
     )
 }
 
